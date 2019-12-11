@@ -103,6 +103,7 @@ brew install vbindiff
 brew install zopfli
 
 #install docker desktop instead
+read -p "Press any key to download and install Docker Desktop"
 open https://download.docker.com/mac/stable/Docker.dmg
 
 #install docker - need docker desktop
