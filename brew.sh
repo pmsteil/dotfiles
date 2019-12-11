@@ -107,6 +107,11 @@ brew install docker docker-compose docker-machine xhyve docker-machine-driver-xh
 sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 
+#install kitematic (docker tool)
+brew cask install kitematic
+
+#install sublime
+brew cask install sublime-text
 
 
 # Remove outdated versions from the cellar.
