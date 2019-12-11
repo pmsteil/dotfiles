@@ -102,16 +102,26 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-#install docker
-brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
-sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+#install docker desktop instead
+open https://download.docker.com/mac/stable/Docker.dmg
+
+#install docker - need docker desktop
+#brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
+#sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+#sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+#installs virtualbox also
+#brew cask install docker-toolbox
+#docker-machine create default --virtualbox-cpu-count 6 --virtualbox-memory 8192
+#eval $(docker-machine env default)
 
 #install kitematic (docker tool)
 brew cask install kitematic
 
 #install sublime
 brew cask install sublime-text
+
+#install 1clipboard
+brew cask install 1clipboard
 
 
 # Remove outdated versions from the cellar.
