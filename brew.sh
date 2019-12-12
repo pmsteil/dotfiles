@@ -115,6 +115,8 @@ open https://download.docker.com/mac/stable/Docker.dmg
 #docker-machine create default --virtualbox-cpu-count 6 --virtualbox-memory 8192
 #eval $(docker-machine env default)
 
+brew install composer
+
 #install kitematic (docker tool)
 brew cask install kitematic
 
