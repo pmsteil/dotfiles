@@ -18,15 +18,15 @@ BREW_PREFIX=$(brew --prefix)
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+#brew install coreutils
+#ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
-brew install moreutils
+#brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+#brew install gnu-sed --with-default-names
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
@@ -48,14 +48,14 @@ brew install wget --with-iri
 brew install grep
 brew install openssh
 brew install screen
-brew install php
+brew install php@7.3
 brew install gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+#brew tap bramstein/webfonttools
+#brew install sfnt2woff
+#brew install sfnt2woff-zopfli
+#brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 #brew install aircrack-ng
@@ -87,46 +87,48 @@ brew install woff2
 #brew install ack
 #brew install exiv2
 brew install git
-brew install git-lfs
+#brew install git-lfs
 #brew install gs
 brew install imagemagick --with-webp
 #brew install lua
 #brew install lynx
-brew install p7zip
-brew install pigz
+#brew install p7zip
+#brew install pigz
 #brew install pv
-brew install rename
+#brew install rename
 #brew install rlwrap
 #brew install ssh-copy-id
 brew install tree
-brew install vbindiff
-brew install zopfli
+#brew install vbindiff
+#brew install zopfli
 
-#install docker desktop instead
-read -p "Press any key to download and install Docker Desktop"
-open https://download.docker.com/mac/stable/Docker.dmg
 
-#install docker - need docker desktop
-#brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve
-#sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-#sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-#installs virtualbox also
-#brew cask install docker-toolbox
-#docker-machine create default --virtualbox-cpu-count 6 --virtualbox-memory 8192
-#eval $(docker-machine env default)
+brew cask install google-chrome && open "/Applications/Google Chrome.app"
 
 #install kitematic (docker tool)
-brew cask install kitematic
+brew cask install kitematic && open "/Applications/Kitematic.app"
 
 #install sublime
-brew cask install sublime-text
+brew cask install sublime-text && open "/Applications/Sublime Text.app"
 
 #install 1clipboard
-brew cask install 1clipboard
+brew cask install 1clipboard && open "/Applications1Clipboard.app"
+
 
 #install 1password
-brew cask install 1password
+brew cask install 1password && open "/Applications/1Password 7.app"
 
+brew cask install appcleaner && open "/Applications/AppCleaner.app"
+
+brew cask install skype && open "/Applications/Skype.app"
+
+brew cask install teamviewer  && open "/Applications/TeamViewer.app"
+
+brew cask install brewservicesmenubar && open "/Applications/BrewServicesMenubar.app"
+
+brew cask install upwork && open "/Applications/Upwork.app"
+
+brew cask install screaming-frog-seo-spider
 
 # Remove outdated versions from the cellar.
 brew cleanup
