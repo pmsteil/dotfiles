@@ -1,0 +1,11 @@
+#todos
+
+install Sublime Package Control
+- https://packagecontrol.io/installation
+
+and these packages:
+- Function Name Display
+- Restart
+- SublimeLinter-php
+- Auto Semi-Colon
+- VCS Gutter
