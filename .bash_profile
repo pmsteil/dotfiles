@@ -1,6 +1,7 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# export PATH="$(brew --prefix php@7.2)/bin:$PATH"
 export PATH="$(brew --prefix php@7.3)/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
@@ -50,3 +51,21 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+
+#pmsteil added
+
+# Git branch in prompt.
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+
+# terminal settings
+## ignore duplicate commands in the history buffer
+export HISTCONTROL=ignoredups
+
+#color colding
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "

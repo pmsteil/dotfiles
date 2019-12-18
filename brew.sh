@@ -48,7 +48,16 @@ brew install wget --with-iri
 brew install grep
 brew install openssh
 brew install screen
-brew install php@7.3
+
+//php packages
+      brew install php@7.3
+
+      # Download the switcher script to the proper destination
+      curl -L https://gist.githubusercontent.com/rhukster/f4c04f1bf59e0b74e335ee5d186a98e2/raw > /usr/local/bin/sphp
+
+      # Make the switcher script writeable
+      chmod +x /usr/local/bin/sphp
+
 brew install gmp
 
 # Install font tools.

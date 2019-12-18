@@ -146,3 +146,14 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias ls="ls -l"
+alias ll="ls -l"
+alias g="git"
+alias gs="git status"
+alias gc="git commit -am "
+alias gp="git push "
+alias gl="git log --graph --oneline"
+alias gu="git reset --soft HEAD~1"
+#refresh the local to be just like the remote
+alias grefresh="git fetch origin && git reset --hard origin/master"
