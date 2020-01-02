@@ -69,3 +69,10 @@ export HISTCONTROL=ignoredups
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+# BEGIN SNIPPET: Magento Cloud CLI configuration
+HOME=${HOME:-'/Users/pmsteil'}
+export PATH="$HOME/"'.magento-cloud/bin':"$PATH"
+if [ -f "$HOME/"'.magento-cloud/shell-config.rc' ]; then . "$HOME/"'.magento-cloud/shell-config.rc'; fi # END SNIPPET
+# END SNIPPET: Magento Cloud CLI configuration

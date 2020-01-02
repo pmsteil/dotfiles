@@ -16,6 +16,9 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
+#ability to move files to the Trash rather than rm which deletes immediately
+brew install trash
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 #brew install coreutils
@@ -59,6 +62,9 @@ brew install screen
       chmod +x /usr/local/bin/sphp
 
 brew install gmp
+brew cask install github
+
+open github
 
 # Install font tools.
 #brew tap bramstein/webfonttools
@@ -123,6 +129,8 @@ brew cask install sublime-text && open "/Applications/Sublime Text.app"
 #install 1clipboard
 brew cask install 1clipboard && open "/Applications1Clipboard.app"
 
+#insomnia rest api debugger
+brew cask install insomnia
 
 #install 1password
 brew cask install 1password && open "/Applications/1Password 7.app"
