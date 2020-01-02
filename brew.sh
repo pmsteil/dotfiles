@@ -120,6 +120,8 @@ brew install tree
 
 brew cask install google-chrome && open "/Applications/Google Chrome.app"
 
+brew install composer
+
 #install kitematic (docker tool)
 brew cask install kitematic && open "/Applications/Kitematic.app"
 
