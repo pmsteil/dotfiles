@@ -149,5 +149,16 @@ brew cask install upwork && open "/Applications/Upwork.app"
 
 brew cask install screaming-frog-seo-spider
 
+
+#blackfire.io
+brew tap blackfireio/homebrew-blackfire
+brew install blackfire-agent
+
+#aws cli
+brew install awscli
+
+#rexx
+brew install regina-rexx
+
 # Remove outdated versions from the cellar.
 brew cleanup

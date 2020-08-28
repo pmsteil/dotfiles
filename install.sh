@@ -1,11 +1,20 @@
 # install.sh
 
-mkdir -p ~/bin && cp bin/* ~/bin
+#mkdir -p ~/bin && cp bin/* ~/bin
 
-cp dotfiles/.bash_profile ~
-cp dotfiles/.aliases ~
+echo Make sure to run brew.sh first...
 
+echo Copying .bash_profile
+cp .bash_profile ~
+
+echo Copying .aliases
+cp .aliases ~
+
+echo Refreshing .bash_profile
 source ~/.bash_profile
+
+echo Install Complete
+echo Run 'source ~/.bash_profile' in any other terminal window to enable configuration
 
 
 

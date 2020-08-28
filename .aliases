@@ -24,6 +24,11 @@ else # macOS `ls`
 	export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 fi
 
+
+# show date/time in history
+export HISTTIMEFORMAT='%F %T '
+
+
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
 
@@ -147,6 +152,17 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
+
+
+
+
+
+
+
+
+
+
+#patrick's additions
 alias ls="ls -hal"
 alias ll="ls -haltr"
 #show hidden (dotfiles)
@@ -155,10 +171,15 @@ alias g="git"
 alias gs="git status"
 alias gc="git commit -am "
 alias gp="git push "
-alias gl="git log --graph --oneline"
+alias gl='git log --graph --pretty=format:"%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(green)%Creset %s" --date=short'
 alias gu="git reset --soft HEAD~1"
 #refresh the local to be just like the remote
 alias grefresh="git fetch origin && git reset --hard origin/master"
 
 alias copy="cp"
 alias move="mv"
+
+#use trash to rm files!
+alias rm="trash"
+alias cls="clear"
+#alias reload="source ~/.bash_profile"
