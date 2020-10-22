@@ -161,6 +161,7 @@ brew install blackfire-agent
 brew install awscli
 
 brew install nginx
+brew install mysql
 
 
 
