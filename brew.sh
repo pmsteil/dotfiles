@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 
+
+
+
 #install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew install cask
+brew install coreutils
+timeout=gtimeout
 
 # Install command-line tools using Homebrew.
 
@@ -18,6 +23,10 @@ BREW_PREFIX=$(brew --prefix)
 
 #ability to move files to the Trash rather than rm which deletes immediately
 brew install trash
+
+#window manager
+brew cask install rectangle
+
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -125,11 +134,8 @@ brew install composer
 #install kitematic (docker tool)
 brew cask install kitematic && open "/Applications/Kitematic.app"
 
-#install sublime
-brew cask install sublime-text && open "/Applications/Sublime Text.app"
-
-#install 1clipboard
-brew cask install 1clipboard && open "/Applications1Clipboard.app"
+#install vs code
+brew cask install visual-studio-code
 
 #insomnia rest api debugger
 brew cask install insomnia
@@ -143,9 +149,6 @@ brew cask install skype && open "/Applications/Skype.app"
 
 brew cask install teamviewer  && open "/Applications/TeamViewer.app"
 
-brew cask install brewservicesmenubar && open "/Applications/BrewServicesMenubar.app"
-
-brew cask install upwork && open "/Applications/Upwork.app"
 
 brew cask install screaming-frog-seo-spider
 
@@ -157,8 +160,26 @@ brew install blackfire-agent
 #aws cli
 brew install awscli
 
-#rexx
-brew install regina-rexx
+brew install nginx
+
+
+
+#optionals - prompt to install these:
+# brew cask install sublime-text && open "/Applications/Sublime Text.app"
+# brew cask install brewservicesmenubar && open "/Applications/BrewServicesMenubar.app"
+# brew cask install upwork && open "/Applications/Upwork.app"
+# brew install regina-rexx
+
+
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo Now, configure the Sync Settings in VS Code to get all your settings blackfireio

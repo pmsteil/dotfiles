@@ -1,0 +1,3 @@
+launchctl unload /usr/local/cellar/nginx/1.17.0/homebrew.mxcl.nginx.plist
+
+echo nginx web server stopped successfully

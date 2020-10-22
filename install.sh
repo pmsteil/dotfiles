@@ -2,7 +2,11 @@
 
 #mkdir -p ~/bin && cp bin/* ~/bin
 
-echo Make sure to run brew.sh first...
+#install Apple Command Line tools
+xcode-select --install
+
+echo Installing all packages via Brew first
+./brew.sh
 
 echo Copying .bash_profile
 cp .bash_profile ~
