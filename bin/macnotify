@@ -1,0 +1,8 @@
+
+
+message=$@
+
+say $message
+osascript -e 'tell app "System Events" to display alert "Notification" message "'"$message"'"'
+
+~/bin/textme "$message"

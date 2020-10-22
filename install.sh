@@ -5,6 +5,8 @@
 #install Apple Command Line tools
 xcode-select --install
 
+./installbins.sh
+
 echo Installing all packages via Brew first
 ./brew.sh
 
