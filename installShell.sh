@@ -8,9 +8,12 @@ if [ -n "$(git status --porcelain)" ]; then
     echo ""
     echo ""
     echo "---------------------------------------------------------------------"
+    echo "You can run these commands to push changes:"
+    echo "  pushd ~/git/dotFiles && gc 'minor tweaks' && git push && popd"
+    echo ""
     read -p "Make sure there are no outstanding commits in ~/git/dotFiles and press ENTER..."
 else
-  echo "no changes";
+  echo "No git changes detected in ~/git/dotFiles...";
 fi
 
 

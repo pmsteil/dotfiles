@@ -1,9 +1,12 @@
 echo Installing XCode dev tools
-#install Apple Command Line tools
 xcode-select --install
-#./dotfiles/brew.sh
 #./dotfiles/git-packages.sh
-#./dotfiles/macos-applications.sh
 
 echo Installing all Brew packages
 ./brew.sh
+
+echo Installing other Mac Apps 
+./installMacOSApplications.sh
+
+echo Installing other Mac OS Tweaks
+./installMacOSDefaults.sh
