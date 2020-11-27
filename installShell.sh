@@ -1,7 +1,7 @@
 # /bin/bash
 
 clear
-pushd ~/git/dotFiles
+pushd ~/git/dotFiles > /dev/null
 
 git status
 
@@ -23,6 +23,7 @@ echo Refreshing .bash_profile
 source ~/.bash_profile
 
 echo You must run the following command to get all the latest shell features
-echo "  source ~/.bash_profile"
+echo "  reload"
+echo ""
 
-popd
+popd > /dev/null
