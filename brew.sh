@@ -149,8 +149,8 @@ brew cask install skype && open "/Applications/Skype.app"
 
 brew cask install teamviewer  && open "/Applications/TeamViewer.app"
 
-
-brew cask install screaming-frog-seo-spider
+#requires annual license key
+#brew cask install screaming-frog-seo-spider
 
 
 #blackfire.io
@@ -161,8 +161,14 @@ brew install blackfire-agent
 brew install awscli
 
 brew install nginx
-brew install mysql
+brew install mariadb
+# brew services start mariadb
 
+
+#load testing tools
+brew install k6
+npm install --global har-to-k6
+npm install -g jshint
 
 
 #optionals - prompt to install these:

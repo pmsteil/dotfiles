@@ -60,6 +60,8 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+# set open file limit to 65k files instead of 256 - composer issue
+sudo launchctl limit maxfiles 65536 200000
 
 # terminal settings
 ## ignore duplicate commands in the history buffer
