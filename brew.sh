@@ -187,9 +187,11 @@ brew cask install sublime-text && open "/Applications/Sublime Text.app"
 brew install speedtest-cli
 alias speedtest="speedtest-cli "
 
-# my amazing window manager!
-# but where are settings stored?
+# the amazing window manager!
 brew cask install amethyst
+
+# copy in saved off amethyst config files
+cp data/amethyst ~/Library/Preferences/com.amethyst.Amethyst.plist 
 
 
 # Remove outdated versions from the cellar.
