@@ -170,14 +170,26 @@ brew install k6
 npm install --global har-to-k6
 npm install -g jshint
 
+#load/security testing tool
+brew cask install owasp-zap
+
+
 
 #optionals - prompt to install these:
-# brew cask install sublime-text && open "/Applications/Sublime Text.app"
+
+#install sublime if still working with devendra :)
+brew cask install sublime-text && open "/Applications/Sublime Text.app"
 # brew cask install brewservicesmenubar && open "/Applications/BrewServicesMenubar.app"
 # brew cask install upwork && open "/Applications/Upwork.app"
 # brew install regina-rexx
 
 
+brew install speedtest-cli
+alias speedtest="speedtest-cli "
+
+# my amazing window manager!
+# but where are settings stored?
+brew cask install amethyst
 
 
 # Remove outdated versions from the cellar.
