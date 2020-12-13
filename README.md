@@ -20,7 +20,7 @@ cd git
 git clone git@github.com:pmsteil/dotfiles.git
 cd dotfiles
 source bootstrap.sh
-
+```
 
 
 
