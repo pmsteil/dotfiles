@@ -5,7 +5,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin master;
 
 function doIt() {
-	rsync --dry-run --exclude ".git/" \
+	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
 		--exclude "*.md" \
@@ -28,3 +28,6 @@ else
 	fi;
 fi;
 unset doIt;
+
+echo "Now run install.sh to install everything else..."
+
