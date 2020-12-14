@@ -208,5 +208,5 @@ echo ""
 echo ""
 echo ""
 echo ""
-echo ""
-echo Now, configure the Sync Settings in VS Code to get all your settings blackfireio
+echo "Setups:"
+echo - In VSCode, Install "Settings Sync" extension and then Enable Sync from Settings Gear in lower left corner of VScode

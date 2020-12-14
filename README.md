@@ -16,8 +16,6 @@ chmod 400 id_rsa
 # enter the keyphrase you use...
 ssh-add id_rsa
 
-#install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 #install github cli - follow any instructions given by github
 brew install gh
@@ -28,8 +26,10 @@ mkdir -p git && cd git
 git auth login
 
 git clone git@github.com:pmsteil/dotfiles.git
+
 cd dotfiles
 source bootstrap.sh
+./install.sh
 
 ```
 
