@@ -8,12 +8,11 @@ function doIt() {
 	rsync --dry-run --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
-		--exclude "install*" \
-		--exclude "bin/*" \
-		--exclude "data/*" \
-		--exclude "init/*" \
+		--exclude "*.md" \
+		--exclude "bin" \
+		--exclude "data" \
+		--exclude "init" \
 		--exclude "*.sh" \
-		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
