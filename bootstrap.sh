@@ -12,7 +12,7 @@ function doIt() {
 		--exclude "bin/*" \
 		--exclude "data/*" \
 		--exclude "init/*" \
-		--exclude "bootstrap.sh" \
+		--exclude "*.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
