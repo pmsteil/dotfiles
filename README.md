@@ -2,10 +2,19 @@
 
 On a new macos install you will need to do the following
 
+	0. copy patrick steil keys to ~/.ssh from
+		https://drive.google.com/drive/folders/111NMkx6sd61K6jX-WcJ79Hyd_eGMyVCs
 	1. Open a terminal
 	2. type the following 
 	
 ```
+
+cd ~/.ssh
+mv id_rsa_patrick_steil id_rsa
+chmod 400 id_rsa
+
+# enter the keyphrase you use...
+ssh-add id_rsa
 
 #install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -13,13 +22,15 @@ On a new macos install you will need to do the following
 #install github cli - follow any instructions given by github
 brew install gh
 
-mkdir -p git
-cd git
+mkdir -p git && cd git
 
+#for this command, choose ssh as default auth mechanism
+git auth login
 
 git clone git@github.com:pmsteil/dotfiles.git
 cd dotfiles
 source bootstrap.sh
+
 ```
 
 
