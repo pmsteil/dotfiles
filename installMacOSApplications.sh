@@ -19,4 +19,4 @@ echo    - Calendars by Qbix ???
 
 
 echo Docker config:
-   - increase cpu(8), ram(8) and disk (256gb)
+echo "   - increase cpu(8), ram(8) and disk (256gb)"
