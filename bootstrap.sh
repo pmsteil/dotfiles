@@ -8,6 +8,10 @@ function doIt() {
 	rsync --dry-run --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
+		--exclude "install*" \
+		--exclude "bin/*" \
+		--exclude "data/*" \
+		--exclude "init/*" \
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
