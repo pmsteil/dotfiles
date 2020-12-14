@@ -5,7 +5,11 @@
 
 #install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$curl-fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh"
+
 brew update
+
+
 brew install cask
 brew install coreutils
 timeout=gtimeout
@@ -20,6 +24,9 @@ brew upgrade
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
+
+read -p "Press enter to install brew apps..."
+
 
 #ability to move files to the Trash rather than rm which deletes immediately
 brew install trash
