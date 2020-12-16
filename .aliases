@@ -55,7 +55,6 @@ alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
-alias macupdate='softwareupdate --all --install --force'
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
@@ -164,8 +163,8 @@ alias path='echo -e ${PATH//:/\\n}'
 
 
 #patrick's additions
-alias ls="ls -hal"
-alias ll="ls -haltr"
+alias ld="ls -halt"
+alias lr="ls -haltr"
 
 # remind me of the command to run if we get this error.. :)
 alias ssh="ssh && echo "" || echo 'If too many auth failures, run ssh-add -D'"
@@ -189,3 +188,10 @@ alias move="mv"
 alias rm="trash"
 alias cls="clear"
 #alias reload="source ~/.bash_profile"
+
+
+
+#magento 
+alias m="magento-cloud"
+alias mssh="magento-cloud ssh"
+alias bm="bin/magento"
