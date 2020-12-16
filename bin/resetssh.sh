@@ -1,1 +1,2 @@
-ssh-add ~/.ssh/id_dsa.churchbu
+ssh-add -D
+#ssh-add ~/.ssh/id_dsa.churchbu
