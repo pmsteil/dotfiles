@@ -131,6 +131,8 @@ brew install imagemagick --with-webp
 brew install tree
 #brew install vbindiff
 #brew install zopfli
+brew install less
+#brew install httrack
 
 
 brew cask install google-chrome && open "/Applications/Google Chrome.app"

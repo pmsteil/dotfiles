@@ -176,7 +176,7 @@ alias g="git"
 alias gs="git status"
 alias gc="git commit -am "
 alias gp="git push "
-alias gl='git log --graph --pretty=format:"%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(green)%Creset %s" --date=short'
+alias gl='git log --graph --color=always --pretty=format:"%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(green)%Creset %s" --date=short'
 alias gus="git reset --soft HEAD~1"
 alias gu="git reset HEAD^ --hard"
 #refresh the local to be just like the remote
