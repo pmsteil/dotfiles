@@ -3,7 +3,7 @@
 On a new macos install you will need to do the following
 
 	0. copy patrick steil keys to ~/.ssh from
-		(ssh folder)[https://drive.google.com/drive/folders/111NMkx6sd61K6jX-WcJ79Hyd_eGMyVCs]
+		[ssh folder](https://drive.google.com/drive/folders/111NMkx6sd61K6jX-WcJ79Hyd_eGMyVCs)
 	1. Open a terminal
 	2. type the following 
 	
@@ -16,6 +16,8 @@ chmod 400 id_rsa
 # enter the keyphrase you use...
 ssh-add id_rsa
 
+#install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 #install github cli - follow any instructions given by github
 brew install gh
