@@ -1,14 +1,13 @@
 # Patrick's Notes
 
-On a new macos install you will need to do the following
+## On a new macos install you will need to do the following
 
-	0. copy patrick steil keys to ~/.ssh from
-		[ssh folder](https://drive.google.com/drive/folders/111NMkx6sd61K6jX-WcJ79Hyd_eGMyVCs)
-	1. Open a terminal
-	2. type the following 
+Copy patrick steil keys to ~/.ssh from
+		[ssh folder](https://drive.google.com/drive/folders/111NMkx6sd61K6jX-WcJ79Hyd_eGMyVCs)		
+
+Open a terminal, type the following 
 	
 ```
-
 cd ~/.ssh
 mv id_rsa_patrick_steil id_rsa
 chmod 400 id_rsa
