@@ -18,12 +18,17 @@ ssh-add id_rsa
 #install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+#if you get "brew command not found"
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
 #install github cli - follow any instructions given by github
 brew install gh
 
 mkdir -p git && cd git
 
 #for this command, choose ssh as default auth mechanism
+#if it doesn't work, just continue
 git auth login
 
 git clone git@github.com:pmsteil/dotfiles.git
