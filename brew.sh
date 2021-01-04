@@ -134,6 +134,9 @@ brew install tree
 brew install less
 #brew install httrack
 
+#json parser
+brew install jq
+
 
 brew cask install google-chrome && open "/Applications/Google Chrome.app"
 
