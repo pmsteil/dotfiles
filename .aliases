@@ -176,6 +176,7 @@ alias g="git"
 alias gs="git status"
 alias gc="git commit -am "
 alias gp="git push "
+alias gd="git checkout "
 #alias gl='git log --graph --color=always --pretty=format:"%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(green)%Creset %s" --date=short'
 
 gl(){

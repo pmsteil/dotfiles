@@ -136,12 +136,12 @@ brew install less
 brew install jq
 
 
-brew install --cask google-chrome && open "/Applications/Google Chrome.app"
+brew install --cask google-chrome
 
 brew install composer
 
 #install kitematic (docker tool)
-brew install --cask kitematic && open "/Applications/Kitematic.app"
+#brew install --cask kitematic && open "/Applications/Kitematic.app"
 
 #install vs code
 brew install --cask visual-studio-code
