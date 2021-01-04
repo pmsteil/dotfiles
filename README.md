@@ -1,14 +1,13 @@
 # Patrick's Notes
 
-On a new macos install you will need to do the following
+## On a new macos install you will need to do the following
 
-	0. copy patrick steil keys to ~/.ssh from
-		https://drive.google.com/drive/folders/111NMkx6sd61K6jX-WcJ79Hyd_eGMyVCs
-	1. Open a terminal
-	2. type the following 
+Copy patrick steil keys to ~/.ssh from
+		[ssh folder](https://drive.google.com/drive/folders/111NMkx6sd61K6jX-WcJ79Hyd_eGMyVCs)		
+
+Open a terminal, type the following 
 	
 ```
-
 cd ~/.ssh
 mv id_rsa_patrick_steil id_rsa
 chmod 400 id_rsa
@@ -16,6 +15,12 @@ chmod 400 id_rsa
 # enter the keyphrase you use...
 ssh-add id_rsa
 
+#install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+#if you get "brew command not found"
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 
 #install github cli - follow any instructions given by github
 brew install gh
@@ -23,6 +28,7 @@ brew install gh
 mkdir -p git && cd git
 
 #for this command, choose ssh as default auth mechanism
+#if it doesn't work, just continue
 git auth login
 
 git clone git@github.com:pmsteil/dotfiles.git

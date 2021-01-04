@@ -30,8 +30,6 @@ read -p "Press enter to install brew apps..."
 #ability to move files to the Trash rather than rm which deletes immediately
 brew install trash
 
-#window manager
-brew cask install rectangle
 
 
 # Install GNU core utilities (those that come with macOS are outdated).
@@ -138,27 +136,27 @@ brew install less
 brew install jq
 
 
-brew cask install google-chrome && open "/Applications/Google Chrome.app"
+brew install --cask google-chrome && open "/Applications/Google Chrome.app"
 
 brew install composer
 
 #install kitematic (docker tool)
-brew cask install kitematic && open "/Applications/Kitematic.app"
+brew install --cask kitematic && open "/Applications/Kitematic.app"
 
 #install vs code
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 
 #insomnia rest api debugger
-brew cask install insomnia
+#brew cask install insomnia
 
 #install 1password
-brew cask install 1password && open "/Applications/1Password 7.app"
+brew install --cask 1password && open "/Applications/1Password 7.app"
 
-brew cask install appcleaner && open "/Applications/AppCleaner.app"
+#brew cask install appcleaner && open "/Applications/AppCleaner.app"
 
-brew cask install skype && open "/Applications/Skype.app"
+brew install --cask skype && open "/Applications/Skype.app"
 
-brew cask install teamviewer  && open "/Applications/TeamViewer.app"
+brew install --cask teamviewer  && open "/Applications/TeamViewer.app"
 
 #requires annual license key
 #brew cask install screaming-frog-seo-spider
@@ -182,16 +180,16 @@ npm install --global har-to-k6
 npm install -g jshint
 
 #load/security testing tool
-brew cask install owasp-zap
+#brew cask install owasp-zap
 
 
 
 #optionals - prompt to install these:
 
 #install sublime if still working with devendra :)
-brew cask install sublime-text && open "/Applications/Sublime Text.app"
-# brew cask install brewservicesmenubar && open "/Applications/BrewServicesMenubar.app"
-# brew cask install upwork && open "/Applications/Upwork.app"
+#brew cask install sublime-text && open "/Applications/Sublime Text.app"
+# brew install --cask brewservicesmenubar && open "/Applications/BrewServicesMenubar.app"
+# brew install --cask upwork && open "/Applications/Upwork.app"
 # brew install regina-rexx
 
 
@@ -199,7 +197,7 @@ brew install speedtest-cli
 alias speedtest="speedtest-cli "
 
 # the amazing window manager!
-brew cask install amethyst
+brew install --cask amethyst
 
 # copy in saved off amethyst config files
 cp data/amethyst ~/Library/Preferences/com.amethyst.Amethyst.plist 
