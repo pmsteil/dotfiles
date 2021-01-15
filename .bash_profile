@@ -78,3 +78,8 @@ HOME=${HOME:-'/Users/pmsteil'}
 export PATH="$HOME/"'.magento-cloud/bin':"$PATH"
 if [ -f "$HOME/"'.magento-cloud/shell-config.rc' ]; then . "$HOME/"'.magento-cloud/shell-config.rc'; fi # END SNIPPET
 # END SNIPPET: Magento Cloud CLI configuration
+
+# this is to preserve history in each terminal session
+# idea from: https://apple.stackexchange.com/questions/41001/how-can-i-get-the-terminal-to-keep-a-separate-history-per-tab-window
+export HISTFILE="$HOME/.bash_history_$TERM_SESSION_ID"
+if [ ! -e $HISTFILE ]; then cp "$HOME/.bash_history" "$HISTFILE"; fi
