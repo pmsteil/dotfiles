@@ -202,6 +202,9 @@ brew install --cask amethyst
 # copy in saved off amethyst config files
 cp data/amethyst ~/Library/Preferences/com.amethyst.Amethyst.plist 
 
+# install a recent version of rsync
+brew install rsync
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
