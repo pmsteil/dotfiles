@@ -166,6 +166,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias ld="ls -halt"
 alias lr="ls -haltr"
 alias ll="ls  -al"
+alias cll="ls  -al"
 
 # remind me of the command to run if we get this error.. :)
 alias ssh="ssh && echo "" || echo 'If too many auth failures, run ssh-add -D'"
