@@ -1,5 +1,8 @@
 message=$@
 
+echo "Notifying master Patrick of $message"
+echo `Date`
+
 #email it
 ~/bin/emailme "$message"
 
