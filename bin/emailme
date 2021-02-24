@@ -1,0 +1,3 @@
+
+message=$1
+echo "$1" | mail -s "$message" patrick@infranet.com

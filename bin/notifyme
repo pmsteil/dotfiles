@@ -1,0 +1,13 @@
+message=$@
+
+#email it
+~/bin/emailme "$message"
+
+#text it
+~/bin/textme "$message"
+
+#show a mac Notification
+osascript -e 'tell app "System Events" to display alert "Notification" message "'"$message"'"'
+
+# say it using voice
+say $message

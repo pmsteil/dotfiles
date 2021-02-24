@@ -1,0 +1,2 @@
+osascript ~/bin/text.scpt pmsteil@icloud.com "$1"
+echo sent text: "$1"

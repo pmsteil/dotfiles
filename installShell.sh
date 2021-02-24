@@ -1,7 +1,13 @@
 # /bin/bash
 
 clear
+
 pushd ~/git/dotFiles > /dev/null
+
+#update any changed files from the ~/bin folder
+#if exist ~/bin
+echo "Copying changed files back from ~/bin to bin folder..."
+rsync -rtvuc ~/bin/* bin/
 
 if [ -n "$(git status --porcelain)" ]; then
     git status
@@ -15,7 +21,6 @@ if [ -n "$(git status --porcelain)" ]; then
 else
   echo "No git changes detected in ~/git/dotFiles...";
 fi
-
 
 echo Installing my personal bin folder
 ./installbins.sh
