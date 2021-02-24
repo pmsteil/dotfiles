@@ -4,7 +4,7 @@ message=$@
 ~/bin/emailme "$message"
 
 #text it
-~/bin/textme "$message"
+# ~/bin/textme "$message"
 
 #show a mac Notification
 osascript -e 'tell app "System Events" to display alert "Notification" message "'"$message"'"'
