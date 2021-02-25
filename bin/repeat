@@ -1,0 +1,30 @@
+#/bin/bash
+
+# repeat n command
+# repeat n --spawn command
+#   --spawn  = spawn each command in separate process
+
+
+iterations=$1
+spawn=0
+shift
+
+if [[ $1 == "--spawn" ]]; then
+    spawn=1
+    shift
+fi
+
+#now command is everything else that is left
+command=$@
+
+
+
+echo "Repeating [$command] [$iterations] times"
+if [[ $spawn == 1 ]]; then
+    echo "   --spawn each as seperate process"
+    for i in $(eval echo "{1..$iterations}"); do $command & done
+else    
+    for i in $(eval echo "{1..$iterations}"); do $command; done
+fi
+
+
