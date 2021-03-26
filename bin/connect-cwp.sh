@@ -1,1 +1,1 @@
-ssh master_nwmncrbywu@149.28.241.22
+ssh master_pnnfgwqqqj@149.28.241.22 -i ~/.ssh/id_rsa $@
