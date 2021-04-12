@@ -1,7 +1,7 @@
 message=$@
 
-echo "Notifying master Patrick of $message"
-echo `Date`
+echo "Notifying master Patrick of $message" `Date`
+
 
 #email it
 ~/bin/emailme "$message"
@@ -10,7 +10,7 @@ echo `Date`
 ~/bin/textme "$message"
 
 #show a mac Notification
-osascript -e 'tell app "System Events" to display alert "Notification" message "'"$message"'"'
+osascript -e 'tell app "System Events" to display alert "Notification" message "'"$message"'"' >/dev/null 2>&1
 
 # say it using voice
 say $message
@@ -18,4 +18,4 @@ say $message
 # add it to the history!  FTW
 history -s "#################################################################"
 history -s "# $message "
-history -s "#################################################################
+history -s "#################################################################"
