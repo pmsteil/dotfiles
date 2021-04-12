@@ -14,3 +14,8 @@ osascript -e 'tell app "System Events" to display alert "Notification" message "
 
 # say it using voice
 say $message
+
+# add it to the history!  FTW
+history -s "#################################################################"
+history -s "# $message "
+history -s "#################################################################
