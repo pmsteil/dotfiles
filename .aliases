@@ -178,6 +178,7 @@ alias gs="git status"
 alias gc="git commit -am "
 alias gp="git push "
 alias gd="git checkout "
+alias gr="git revert --strategy resolve "
 
 alias gt='git log --tags --simplify-by-decoration --pretty="format:%ai %d"'
 
