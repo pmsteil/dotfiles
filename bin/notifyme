@@ -1,3 +1,5 @@
+#!/bin/sh
+
 message=$@
 
 echo "Notifying master Patrick of $message" `Date`
@@ -7,7 +9,7 @@ echo "Notifying master Patrick of $message" `Date`
 ~/bin/emailme "$message"
 
 #text it
-~/bin/textme "$message"
+#~/bin/textme "$message"
 
 #show a mac Notification
 osascript -e 'tell app "System Events" to display alert "Notification" message "'"$message"'"' >/dev/null 2>&1
