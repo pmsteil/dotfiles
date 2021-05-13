@@ -178,7 +178,8 @@ alias gs="git status"
 alias gc="git commit -am "
 alias gp="git push "
 alias gd="git checkout "
-alias gr="git revert --strategy resolve "
+alias grevert="git revert --strategy resolve "
+alias gpreview="git fetch origin ; git log --color -p --full-diff master..origin/master"
 
 alias gt='git log --tags --simplify-by-decoration --pretty="format:%ai %d"'
 
