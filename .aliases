@@ -177,7 +177,27 @@ alias g="git"
 alias gs="git status"
 alias gc="git commit -am "
 alias gp="git push "
-alias gd="git checkout "
+
+
+# uses:
+# 	gd staging
+#   gd production
+#   gd (defaults to defaultbranch)
+gd() {
+	defaultbranch="wdirect"
+
+	newbranch=$defaultbranch
+
+	if [[ "$1" != "" ]]; then
+		newbranch="$1"
+	fi
+    
+	git checkout "$newbranch"    
+}
+
+
+
+
 alias grevert="git revert --strategy resolve "
 alias gpreview="git fetch origin ; git log --color -p --full-diff master..origin/master"
 
